@@ -21,3 +21,12 @@
     (eval-print-last-sexp)))
 
 (el-get-bundle markdown-mode)
+
+;; color-theme
+(add-to-list 'load-path (locate-user-emacs-file "el-get/color-theme"))
+(require 'color-theme)
+(color-theme-initialize)
+(color-theme-dark-laptop)
+;(color-theme-billw)
+;
+;; (color-theme-simple-1)
