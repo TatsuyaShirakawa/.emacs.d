@@ -3,7 +3,7 @@
 (global-set-key "\C-h" nil)
 
 
-;; 
+;; make it ease to call .emacs.d
 (when load-file-name
   (setq user-emacs-directory (file-name-directory load-file-name)))
 
@@ -20,3 +20,13 @@
 					      comint-password-prompt-regexp t t))))
 
 
+;; color theme
+(load-theme 'wombat)
+
+;; swap Command <-> Option (for Mac)
+(setq ns-command-modifier (quote meta))
+(setq ns-alternate-modifier (quote super))
+
+;; hide tool-bar, menu-bar
+(tool-bar-mode -1)
+(menu-bar-mode -1)
